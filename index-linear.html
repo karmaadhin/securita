@@ -1,0 +1,124 @@
+<!-- index-gradient-vertical-bottom-to-top.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSec Firm - Home (Vertical Gradient Bottom to Top)</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      background: linear-gradient(to top, #32b5a8, #0c413b);
+      color: #b9fef4;
+    }
+    .btn-primary {
+      background-color: #40e0d0;
+      color: #031f1c;
+    }
+    .btn-primary:hover {
+      background-color: #248c82;
+    }
+    .section-dark {
+      background: linear-gradient(to top, #18655d, #031f1c);
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+<!-- Header -->
+<header class="bg-opacity-20 backdrop-blur text-white p-6 flex justify-between items-center">
+  <h1 class="text-2xl font-bold text-[#40e0d0]">Securita</h1>
+  <nav class="space-x-6">
+    <a href="index-linear.html" class="text-[#40e0d0] font-semibold">Home</a>
+    <a href="services-linear.html" class="hover:text-[#40e0d0]">Services</a>
+    <a href="case-studies-linear.html" class="hover:text-[#40e0d0]">Case Studies</a>
+    <a href="testimonials-linear.html" class="hover:text-[#40e0d0]">Testimonials</a>
+    <a href="contact-linear.html" class="hover:text-[#40e0d0]">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
+  <h2 class="text-5xl font-bold mb-4">Cyber Security with a Modern Edge</h2>
+  <p class="text-lg mb-6 text-gray-200">Advanced solutions for secure systems, apps, APIs, and cloud environments.</p>
+  <a href="#contact" class="btn-primary px-6 py-3 rounded font-semibold">Explore Securita Freemium</a>
+</section>
+
+<!-- Trusted Clients -->
+<section class="py-16 px-6 bg-opacity-10" data-aos="fade-up">
+  <h3 class="text-3xl font-semibold text-center mb-8">Trusted By</h3>
+  <div class="flex flex-wrap justify-center space-x-6">
+    <img src="assets/client1.png" alt="Client 1" class="h-12">
+    <img src="assets/client2.png" alt="Client 2" class="h-12">
+    <img src="assets/client3.png" alt="Client 3" class="h-12">
+    <img src="assets/client4.png" alt="Client 4" class="h-12">
+  </div>
+</section>
+
+<!-- Services -->
+<section class="py-16 px-6 section-dark text-white" data-aos="fade-up">
+  <h3 class="text-3xl font-semibold text-center mb-10">Our Core Services</h3>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="p-6 rounded bg-gray-900 bg-opacity-60">
+      <h4 class="text-xl font-bold mb-2">Red Team Assessment</h4>
+      <p>Simulate real-world attacks and test your defenses proactively.</p>
+    </div>
+    <div class="p-6 rounded bg-gray-900 bg-opacity-60">
+      <h4 class="text-xl font-bold mb-2">OSINT</h4>
+      <p>Expose publicly available sensitive data and tighten digital footprints.</p>
+    </div>
+    <div class="p-6 rounded bg-gray-900 bg-opacity-60">
+      <h4 class="text-xl font-bold mb-2">DevSecOps</h4>
+      <p>Automate security across your development lifecycle seamlessly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Case Study Preview -->
+<section class="py-16 px-6" data-aos="fade-up">
+  <h3 class="text-3xl font-semibold text-center mb-10">Case Study Spotlight</h3>
+  <div class="bg-gray-900 bg-opacity-50 p-6 rounded shadow-lg max-w-4xl mx-auto">
+    <h4 class="text-xl font-bold mb-2">Securing Cloud Infra for HealthTech</h4>
+    <p class="mb-2">Discovered misconfigured IAM policies and helped establish a zero-trust cloud model.</p>
+    <a href="case-studies-linear.html" class="text-[#40e0d0] underline">Read More →</a>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 px-6 section-dark text-white" data-aos="fade-up">
+  <h3 class="text-3xl font-semibold text-center mb-10">Client Feedback</h3>
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="italic text-lg">“Incredible team! They caught vulnerabilities no one else did.”</p>
+    <p class="mt-4 font-semibold">— CISO, SaaS Startup</p>
+  </div>
+</section>
+
+<!-- Blog Preview -->
+<section class="py-16 px-6" data-aos="fade-up">
+  <h3 class="text-3xl font-semibold text-center mb-10">Insights & News</h3>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-gray-800 p-4 rounded">
+      <h4 class="text-xl font-bold mb-2">Why Threat Modeling Matters</h4>
+      <p class="text-sm">Learn how to visualize your security posture and reduce attack surface.</p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded">
+      <h4 class="text-xl font-bold mb-2">Secrets of a Successful VAPT Audit</h4>
+      <p class="text-sm">Audit tips to impress investors and comply with frameworks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="section-dark text-center py-10">
+  <p class="mb-4">© 2025 CyberSec Firm. All rights reserved.</p>
+  <form class="flex justify-center gap-2">
+    <input type="email" placeholder="Your email" class="px-4 py-2 rounded bg-gray-700 text-white">
+    <button class="btn-primary px-4 py-2 rounded">Subscribe</button>
+  </form>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
