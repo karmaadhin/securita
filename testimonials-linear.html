@@ -27,7 +27,7 @@
   </nav>
 </header>
 
-<!-- Testimonials Section -->
+<!-- Testimonials Section 
 <section class="py-16 px-6" data-aos="fade-up">
   <h3 class="text-3xl font-semibold text-center mb-10">What Our Clients Say</h3>
   <div class="max-w-3xl mx-auto text-center">
@@ -36,6 +36,59 @@
     <p class="italic text-lg mt-8">“Their expertise saved us from a major data breach. Highly recommended!”</p>
     <p class="mt-4 font-semibold">— CTO, HealthTech</p>
   </div>
+</section>
+-->
+<section class="py-16 px-6 bg-[#f9fafa]">
+  <h2 class="text-3xl font-bold text-center text-[#0c413b] mb-12">What Our Clients Say</h2>
+
+  <div class="overflow-hidden relative">
+    <div class="flex space-x-8 animate-testimonial-scroll">
+      <!-- Testimonial 1 -->
+      <div class="min-w-[300px] max-w-sm p-6 bg-white rounded-xl shadow-md border border-[#b9fef4]">
+        <p class="text-gray-700 italic">"Exceptional service! The team identified critical flaws and helped us patch them before any damage."</p>
+        <div class="mt-4 text-sm text-[#0c413b] font-semibold">— Aditi Mehta, CTO @ FinServe</div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="min-w-[300px] max-w-sm p-6 bg-white rounded-xl shadow-md border border-[#b9fef4]">
+        <p class="text-gray-700 italic">"The red teaming was extremely professional. Great insights and realistic simulations."</p>
+        <div class="mt-4 text-sm text-[#0c413b] font-semibold">— Rahul Sinha, CISO @ TechNova</div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="min-w-[300px] max-w-sm p-6 bg-white rounded-xl shadow-md border border-[#b9fef4]">
+        <p class="text-gray-700 italic">"We were amazed by their DevSecOps implementation—clean, fast, and secure!"</p>
+        <div class="mt-4 text-sm text-[#0c413b] font-semibold">— Nisha Verma, Head of Infra @ MedCore</div>
+      </div>
+
+      <!-- Repeat Testimonials for seamless scroll -->
+      <div class="min-w-[300px] max-w-sm p-6 bg-white rounded-xl shadow-md border border-[#b9fef4]">
+        <p class="text-gray-700 italic">"Exceptional service! The team identified critical flaws and helped us patch them before any damage."</p>
+        <div class="mt-4 text-sm text-[#0c413b] font-semibold">— Aditi Mehta, CTO @ FinServe</div>
+      </div>
+      <div class="min-w-[300px] max-w-sm p-6 bg-white rounded-xl shadow-md border border-[#b9fef4]">
+        <p class="text-gray-700 italic">"The red teaming was extremely professional. Great insights and realistic simulations."</p>
+        <div class="mt-4 text-sm text-[#0c413b] font-semibold">— Rahul Sinha, CISO @ TechNova</div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes testimonialScroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-testimonial-scroll {
+      animation: testimonialScroll 40s linear infinite;
+      display: flex;
+      width: max-content;
+    }
+  </style>
 </section>
 
 <!-- Footer -->
