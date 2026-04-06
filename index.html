@@ -1,173 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CyberSec Firm - Home (Vertical Gradient Bottom to Top)</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta charset="UTF-8">
+  <title>Tropical Light Portfolio 🌴</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 🌟 AOS Library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    document.addEventListener("DOMContentLoaded", () => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    });
+  </script>
+
   <style>
-    body {
-      background: linear-gradient(to top, #32b5a8, #0c413b);
-      color: #b9fef4;
-    }
-    .btn-primary {
-      background-color: #40e0d0;
-      color: #031f1c;
-    }
-    .btn-primary:hover {
-      background-color: #248c82;
-    }
-    .section-dark {
-      background: linear-gradient(to top, #18655d, #031f1c);
+    /* 🌴 Button Glow Hover */
+    .glow-hover:hover {
+      box-shadow: 0 0 15px rgba(64, 224, 208, 0.6);
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
     }
   </style>
 </head>
-<body class="font-sans">
 
-<!-- Header -->
-<header class="bg-opacity-20 backdrop-blur text-white p-6 flex justify-between items-center">
-  <h1 class="text-2xl font-bold text-[#40e0d0]">Securita</h1>
-  <nav class="space-x-6">
-    <a href="index-linear.html" class="text-[#40e0d0] font-semibold">Home</a>
-    <a href="services-linear.html" class="hover:text-[#40e0d0]">Services</a>
-    <a href="case-studies-linear.html" class="hover:text-[#40e0d0]">Case Studies</a>
-    <a href="testimonials-linear.html" class="hover:text-[#40e0d0]">Testimonials</a>
-    <a href="contact-linear.html" class="hover:text-[#40e0d0]">Contact</a>
+<body class="bg-[#FDFDFD] text-[#007F7F] font-sans overflow-x-hidden">
+
+  <!-- 🌴 Navbar -->
+  <nav class="flex justify-between items-center p-6 shadow-sm bg-white/80 backdrop-blur sticky top-0 z-50" data-aos="fade-down">
+    <h1 class="text-2xl font-bold text-[#40E0D0]">TropicalMe</h1>
+    <div class="hidden md:flex space-x-8">
+      <a href="#home" class="hover:text-[#FFA987] transition">Home</a>
+      <a href="#about" class="hover:text-[#40E0D0] transition">About</a>
+      <a href="#services" class="hover:text-[#FFA987] transition">Services</a>
+      <a href="#portfolio" class="hover:text-[#40E0D0] transition">Portfolio</a>
+      <a href="#blog" class="hover:text-[#FFA987] transition">Blog</a>
+      <a href="#contact" class="hover:text-[#40E0D0] transition">Contact</a>
+    </div>
   </nav>
-</header>
 
-<!-- Hero Section -->
-<section class="h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
-  <h2 class="text-5xl font-bold mb-4">Cyber Security with a Modern Edge</h2>
-  <p class="text-lg mb-6 text-gray-200">Advanced solutions for secure systems, apps, APIs, and cloud environments.</p>
-  <!--  <a href="#contact" class="btn-primary px-6 py-3 rounded font-semibold">See what our clients have to say about us!</a> -->
-  <a href="testimonials-linear.html" class="btn-primary px-6 py-3 rounded font-semibold">See what our clients have to say about us!</a> 
-</section>
-<section class="py-16 px-6 section-dark text-white" data-aos="fade-up">
-  <h3 class="text-3xl font-semibold text-center mb-10">Trusted By</h3>
-  
-  <div class="flex flex-wrap justify-center gap-12">
-    <img src="unfitmart.jpg" alt="Client 1" class="h-16 border border-[#248c82] rounded-md floating-logo">
-    <img src="evis.avif" alt="Client 2" class="h-16 border border-[#248c82] rounded-md floating-logo delay-100">
-    <img src="hacknox.jpg" alt="Client 3" class="h-16 border border-[#248c82] rounded-md floating-logo delay-200">
-  </div>
+  <!-- 🏝️ Hero -->
+  <section id="home" class="text-center py-24 bg-gradient-to-r from-[#E0FFFF] to-[#FDFDFD]" data-aos="fade-up">
+    <h2 class="text-5xl font-bold mb-4 text-[#007F7F]">Aloha, I’m <span class="text-[#40E0D0]">Kai</span></h2>
+    <p class="text-lg text-[#555] max-w-xl mx-auto">I create digital experiences inspired by sunlight, color, and motion — blending design and technology for impact.</p>
+    <div class="mt-8 flex justify-center space-x-4">
+      <button class="px-6 py-3 bg-[#40E0D0] text-white rounded-full font-medium glow-hover">View Work</button>
+      <button class="px-6 py-3 border border-[#40E0D0] text-[#40E0D0] rounded-full font-medium hover:bg-[#40E0D0]/10 transition">Contact</button>
+    </div>
+  </section>
 
-  <style>
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-    }
+  <!-- 🌺 About -->
+  <section id="about" class="py-20 px-8 md:px-20 bg-[#FFFFFF]" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4 text-[#40E0D0]">About Me</h3>
+      <p class="text-[#555] leading-relaxed max-w-3xl mx-auto">
+        I'm a designer and developer passionate about crafting clean, intuitive digital experiences.
+        My goal is to make the web a more beautiful and human place — one project at a time.
+      </p>
+    </div>
+  </section>
 
-    .floating-logo {
-      animation: float 4s ease-in-out infinite;
-    }
-
-    .delay-100 { animation-delay: 0.1s; }
-    .delay-200 { animation-delay: 0.2s; }
-    .delay-300 { animation-delay: 0.3s; }
-    .delay-400 { animation-delay: 0.4s; }
-  </style>
-</section>
-
-
-
-<!-- Case Study Preview -->
-<section class="py-16 px-6" data-aos="fade-up">
- 
-  <h3 class="text-3xl font-semibold text-center mb-10">Case Study Spotlight</h3>
-  <div class="bg-gray-900 bg-opacity-50 p-6 rounded shadow-lg max-w-4xl mx-auto">
-    <h4 class="text-xl font-bold mb-2">Securing Cloud Infra for HealthTech</h4>
-    <p class="mb-2">Discovered misconfigured IAM policies and helped establish a zero-trust cloud model.</p>
-    <a href="case-studies-linear.html" class="text-[#40e0d0] underline">Read More →</a>
-  </div>
-</section>
-
-<!-- Testimonials (Auto-Scrolling) -->
-<section class="py-16 px-6 bg-[#031f1c] text-white overflow-hidden" data-aos="fade-up">
-  <h3 class="text-3xl font-semibold text-center mb-10 text-[#b9fef4]">Client Feedback</h3>
-
-  <div class="relative">
-    <div class="flex space-x-8 animate-feedback-scroll">
-      <!-- Feedback Card 1 -->
-      <div class="min-w-[300px] max-w-sm bg-[#0c413b] p-6 rounded-lg shadow-lg border border-[#40e0d0]">
-        <p class="italic text-lg">“Incredible team! They caught vulnerabilities no one else did.”</p>
-        <p class="mt-4 font-semibold text-[#b9fef4]">— CISO, SaaS Startup</p>
+  <!-- 💼 Services -->
+  <section id="services" class="py-20 px-8 bg-gradient-to-b from-[#FDFDFD] to-[#E0FFFF]">
+    <h3 class="text-3xl font-bold text-center mb-12 text-[#40E0D0]" data-aos="fade-down">What I Do</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="p-6 bg-white rounded-2xl shadow hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-xl font-semibold mb-3 text-[#FFA987]">Web Design</h4>
+        <p class="text-[#555]">Modern, user-friendly, and accessible designs that delight audiences and drive results.</p>
       </div>
-
-      <!-- Feedback Card 2 -->
-      <div class="min-w-[300px] max-w-sm bg-[#0c413b] p-6 rounded-lg shadow-lg border border-[#40e0d0]">
-        <p class="italic text-lg">“Red teaming simulations were brilliant — very close to real-world.”</p>
-        <p class="mt-4 font-semibold text-[#b9fef4]">— Director, FinTech</p>
+      <div class="p-6 bg-white rounded-2xl shadow hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-semibold mb-3 text-[#40E0D0]">Development</h4>
+        <p class="text-[#555]">Clean, scalable front-end and back-end solutions built for speed and reliability.</p>
       </div>
-
-      <!-- Feedback Card 3 -->
-      <div class="min-w-[300px] max-w-sm bg-[#0c413b] p-6 rounded-lg shadow-lg border border-[#40e0d0]">
-        <p class="italic text-lg">“Best DevSecOps onboarding support we’ve received so far.”</p>
-        <p class="mt-4 font-semibold text-[#b9fef4]">— Head of Engineering, MedTech</p>
-      </div>
-
-      <!-- Repeat for seamless scroll -->
-      <div class="min-w-[300px] max-w-sm bg-[#0c413b] p-6 rounded-lg shadow-lg border border-[#40e0d0]">
-        <p class="italic text-lg">“Incredible team! They caught vulnerabilities no one else did.”</p>
-        <p class="mt-4 font-semibold text-[#b9fef4]">— CISO, SaaS Startup</p>
-      </div>
-
-      <div class="min-w-[300px] max-w-sm bg-[#0c413b] p-6 rounded-lg shadow-lg border border-[#40e0d0]">
-        <p class="italic text-lg">“Red teaming simulations were brilliant — very close to real-world.”</p>
-        <p class="mt-4 font-semibold text-[#b9fef4]">— Director, FinTech</p>
+      <div class="p-6 bg-white rounded-2xl shadow hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="text-xl font-semibold mb-3 text-[#FFA987]">Brand Strategy</h4>
+        <p class="text-[#555]">Helping brands define their voice and visual identity for consistent storytelling.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <style>
-    @keyframes feedbackScroll {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    .animate-feedback-scroll {
-      animation: feedbackScroll 40s linear infinite;
-      display: flex;
-      width: max-content;
-    }
-  </style>
-</section>
-
-
-<!-- Blog Preview -->
-<section class="py-16 px-6" data-aos="fade-up">
-  <h3 class="text-3xl font-semibold text-center mb-10">Insights & News</h3>
-  <div class="grid md:grid-cols-2 gap-8">
-    <div class="bg-gray-800 p-4 rounded">
-      <h4 class="text-xl font-bold mb-2">Why Threat Modeling Matters</h4>
-      <p class="text-sm">Learn how to visualize your security posture and reduce attack surface.</p>
+  <!-- 🖼️ Portfolio -->
+  <section id="portfolio" class="py-20 px-8 bg-[#FFFFFF]" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-center mb-12 text-[#40E0D0]">Featured Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-[#40E0D0] mb-2">Coastal UI</h4>
+          <p class="text-[#555]">A clean, fluid interface inspired by beach hues and simplicity.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-[#FFA987] mb-2">Sunset Store</h4>
+          <p class="text-[#555]">E-commerce site designed with warmth, simplicity, and emotional color play.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-[#40E0D0] mb-2">WaveAnalytics</h4>
+          <p class="text-[#555]">An analytics dashboard with ocean-inspired clarity.</p>
+        </div>
+      </div>
     </div>
-    <div class="bg-gray-800 p-4 rounded">
-      <h4 class="text-xl font-bold mb-2">Secrets of a Successful VAPT Audit</h4>
-      <p class="text-sm">Audit tips to impress investors and comply with frameworks.</p>
+  </section>
+
+  <!-- 📰 Blog Preview -->
+  <section id="blog" class="py-20 px-8 bg-gradient-to-b from-[#E0FFFF] to-[#FDFDFD]" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-center mb-12 text-[#40E0D0]">Latest from My Blog</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <a href="blog.html" class="block bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition glow-hover" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-xl font-semibold mb-3 text-[#FFA987]">Designing with Emotion</h4>
+        <p class="text-[#555]">A look at how color and tone influence user trust and comfort online.</p>
+        <p class="text-sm mt-4 text-[#40E0D0] font-semibold">Read More →</p>
+      </a>
+      <a href="blog.html" class="block bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition glow-hover" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-semibold mb-3 text-[#40E0D0]">Simplicity in Motion</h4>
+        <p class="text-[#555]">Using subtle animation to make your brand feel more alive — not overwhelming.</p>
+        <p class="text-sm mt-4 text-[#40E0D0] font-semibold">Read More →</p>
+      </a>
+      <a href="blog.html" class="block bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition glow-hover" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="text-xl font-semibold mb-3 text-[#FFA987]">The Future of Calm Design</h4>
+        <p class="text-[#555]">Exploring minimalist principles for more mindful digital experiences.</p>
+        <p class="text-sm mt-4 text-[#40E0D0] font-semibold">Read More →</p>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="section-dark text-center py-10">
-  <p class="mb-4">© 2025 CyberSec Firm. All rights reserved.</p>
-  <form class="flex justify-center gap-2">
-    <input type="email" placeholder="Your email" class="px-4 py-2 rounded bg-gray-700 text-white">
-    <button class="btn-primary px-4 py-2 rounded">Subscribe</button>
-  </form>
-</footer>
+  <!-- 📩 Contact -->
+  <section id="contact" class="py-20 px-8 bg-[#FFFFFF] text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-4 text-[#40E0D0]">Get in Touch</h3>
+    <p class="text-[#555] max-w-xl mx-auto mb-8">Have a project in mind or just want to say hello? I’d love to hear from you!</p>
+    <a href="mailto:hello@kaiportfolio.com" class="px-8 py-3 bg-[#40E0D0] text-white rounded-full font-medium glow-hover">Email Me</a>
+  </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+  <!-- 🌊 Footer -->
+  <footer class="text-center py-6 border-t border-[#40E0D0]/30 bg-[#FDFDFD]">
+    <p>© 2025 Kai | Crafted with ☀️ and turquoise energy.</p>
+  </footer>
 </body>
 </html>
